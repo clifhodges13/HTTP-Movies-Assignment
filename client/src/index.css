@@ -121,3 +121,21 @@ body {
   justify-content: space-around;
   align-items: flex-end;
 }
+
+.delete-button {
+  position: absolute;
+  top: 130px;
+  right: 25px;
+  padding: 5px 10px;
+  background: orangered;
+}
+
+.delete-button:hover {
+  background: rgb(231, 142, 40);
+  color: white;
+  cursor: grab;
+}
+
+.delete-button:active, .delete-button:focus {
+  cursor: grabbing;
+}
