@@ -64,6 +64,11 @@ body {
 .save-button:hover {
   background-color: green;
   color: white;
+  cursor: grab;
+}
+
+.save-button:active, .save-button:focus {
+  cursor: grabbing;
 }
 
 .home-button {
@@ -74,4 +79,45 @@ body {
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+.update-button {
+  position: absolute;
+  right: 25px;
+  top: 80px;
+  text-decoration: none;
+  color: inherit;
+  background: peachpuff;
+  padding: 5px 10px;
+}
+
+.update-button:hover {
+  background: rgb(231, 142, 40);
+  color: white;
+  cursor: grab;
+}
+
+.update-button:active, .update-button:focus {
+  cursor: grabbing;
+}
+
+.update-form-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 30px;
+}
+
+.update-form-container h1 {
+  position: absolute;
+  top: 0;
+}
+
+.update-form {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-around;
+  align-items: flex-end;
 }
