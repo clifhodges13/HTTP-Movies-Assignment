@@ -27,7 +27,7 @@ export default function UpdateMovie(props) {
       .catch(err => {
         console.log(err)
       })
-  }, [])
+  }, [props.match.params.id])
 
   const handleChange = e => {
     setData({
